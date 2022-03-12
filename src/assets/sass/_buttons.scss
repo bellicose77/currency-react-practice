@@ -1,0 +1,418 @@
+@import "variables";
+
+.btn {
+  font-size: inherit;
+  line-height: initial;
+  color: var(--default-font-color);
+  padding: $default-button-padding !important;
+
+  &.modal-btn {
+    padding: 0.45rem 2rem !important;
+  }
+
+  svg {
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  &.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  &.btn-icon-only {
+    padding: 0.45rem 0.8rem !important;
+
+    svg {
+      margin-right: 0 !important;
+    }
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+  &.btn-with-shadow {
+    box-shadow: var(--default-box-shadow);
+  }
+
+  &.btn-primary {
+    color: $white;
+    border-color: $brand-color;
+    background-color: $brand-color;
+    transition: all $default-transition-duration
+      $action-transition-timing-function;
+
+    &:hover {
+      background-color: $brand-color-dark;
+      border-color: $brand-color-dark;
+    }
+
+    &:disabled {
+      &:hover {
+        background-color: $blue;
+      }
+    }
+  }
+
+  &.btn-secondary {
+    color: $white;
+    border-color: var(--btn-secondary-bg);
+    background-color: var(--btn-secondary-bg);
+
+    &:disabled {
+      &:hover {
+        background-color: var(--btn-secondary-bg);
+      }
+    }
+
+    &:hover {
+      background-color: var(--btn-secondary-hover-bg);
+      border-color: var(--btn-secondary-hover-bg);
+    }
+  }
+
+  &.btn-success {
+    color: $white;
+    border-color: $success-color;
+    background-color: $success-color;
+
+    &:hover {
+      background-color: darken($success-color, 10%);
+      border-color: darken($success-color, 10%);
+    }
+    &:disabled {
+      &:hover {
+        background-color: $success-color;
+      }
+    }
+  }
+
+  &.btn-danger {
+    color: $white;
+    border-color: $danger-color;
+    background-color: $danger-color;
+    transition: all $default-transition-duration
+      $action-transition-timing-function;
+
+    &:hover {
+      background-color: darken($danger-color, 10%);
+      border-color: darken($danger-color, 10%);
+    }
+
+    &:disabled {
+      &:hover {
+        background-color: $danger-color;
+      }
+    }
+  }
+
+  &.btn-info {
+    color: $white;
+    border-color: $info-color;
+    background-color: $info-color;
+    transition: all $default-transition-duration
+      $action-transition-timing-function;
+
+    &:hover {
+      background-color: darken($info-color, 10%);
+      border-color: darken($info-color, 10%);
+    }
+
+    &:disabled {
+      &:hover {
+        background-color: $info-color;
+      }
+    }
+  }
+
+  &.btn-warning {
+    color: $white;
+    border-color: $warning-color;
+    background-color: $warning-color;
+    transition: all $default-transition-duration
+      $action-transition-timing-function;
+
+    &:disabled {
+      &:hover {
+        background-color: $warning-color;
+      }
+    }
+
+    &:hover {
+      background-color: darken($warning-color, 10%);
+      border-color: darken($warning-color, 10%);
+    }
+  }
+
+  &.btn-orange {
+    color: $white;
+    border-color: $orange;
+    background-color: $orange;
+    transition: all $default-transition-duration
+      $action-transition-timing-function;
+
+    &:disabled {
+      &:hover {
+        background-color: $orange;
+      }
+    }
+
+    &:hover {
+      background-color: darken($orange, 10%);
+      border-color: darken($orange, 10%);
+    }
+  }
+
+  &.btn-light {
+    border-color: var(--btn-light-color);
+    background-color: var(--btn-light-color);
+    transition: all $default-transition-duration
+      $action-transition-timing-function;
+
+    &:hover {
+      border-color: var(--base-color);
+      color: var(--default-font-color);
+      background-color: var(--base-color);
+    }
+
+    &:focus {
+      color: var(--default-font-color);
+    }
+
+    &:disabled {
+      &:hover {
+        color: #212529;
+        background-color: var(--btn-light-color);
+      }
+    }
+  }
+
+  &.btn-dark {
+    color: $white;
+    border-color: var(--btn-dark-color);
+    background-color: var(--btn-dark-color);
+
+    &:hover {
+      background-color: var(--btn-dark-hover-color);
+      border-color: var(--btn-dark-hover-color);
+    }
+
+    &:disabled {
+      &:hover {
+        background-color: var(--btn-dark-color);
+      }
+    }
+  }
+
+  &.btn-link {
+    padding: 0 !important;
+  }
+
+  &.btn-outline-primary {
+    color: $brand-color;
+    border-color: $brand-color;
+
+    &:hover {
+      color: $white;
+      background-color: $brand-color;
+    }
+
+    &:disabled {
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+
+  &.btn-outline-secondary {
+    color: $default-secondary-color;
+    border-color: $default-secondary-color;
+
+    &:hover {
+      color: $white;
+      background-color: $default-secondary-color;
+    }
+
+    &:disabled {
+      &:hover {
+        color: $default-secondary-color;
+      }
+    }
+  }
+
+  &.btn-outline-success {
+    color: $success-color;
+    border-color: $success-color;
+
+    &:hover {
+      color: $white;
+      background-color: $success-color;
+    }
+
+    &:disabled {
+      &:hover {
+        color: $success-color;
+      }
+    }
+  }
+
+  &.btn-outline-danger {
+    color: $danger-color;
+    border-color: $danger-color;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:disabled {
+      &:hover {
+        color: $danger-color;
+      }
+    }
+  }
+
+  &.btn-outline-info {
+    color: $info-color;
+    border-color: $info-color;
+
+    &:hover {
+      color: $white;
+      background-color: $info-color;
+    }
+
+    &:disabled {
+      &:hover {
+        color: $info-color;
+      }
+    }
+  }
+
+  &.btn-outline-warning {
+    color: $warning-color;
+    border-color: $warning-color;
+
+    &:hover {
+      color: $white;
+      background-color: $warning-color;
+    }
+
+    &:disabled {
+      &:hover {
+        color: $warning-color;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.btn-outline-light {
+    color: var(--default-font-color);
+
+    &:hover {
+      color: $functional1;
+    }
+  }
+
+  &.btn-outline-dark {
+    color: var(--default-font-color);
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-warning,
+.btn-success,
+.btn-info,
+.btn-danger,
+.btn-dark,
+.btn-orange,
+.btn-light {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2) !important;
+
+  &:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  &:focus {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+// Btn group
+.btn-group {
+  border-radius: $default-radius;
+  border: 1px solid $brand-color !important;
+
+  .btn {
+    box-shadow: none !important;
+    padding: 0.7rem 1.5rem !important;
+    &:not(:first-child) {
+      border-left: 1px solid $brand-color !important;
+    }
+
+    &.active {
+      box-shadow: none;
+      background-color: $brand-color;
+      color: $white;
+      border: 1px solid $brand-color !important;
+      -webkit-transition: all $default-transition-duration ease-in-out;
+      -moz-transition: all $default-transition-duration ease-in-out;
+      -o-transition: all $default-transition-duration ease-in-out;
+      -ms-transition: all $default-transition-duration ease-in-out;
+      transition: all $default-transition-duration ease-in-out;
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+// toggle Btn block
+.button-block {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-radius: $default-radius;
+  border: 1px solid $brand-color !important;
+  color: $default-secondary-color;
+
+  .toggle-button-label {
+    padding: 0.7rem 1.5rem;
+    margin: 0 !important;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      border-left: 1px solid $brand-color !important;
+    }
+
+    &.active {
+      background-color: $brand-color;
+      -webkit-transition: all $default-transition-duration ease-in-out;
+      -moz-transition: all $default-transition-duration ease-in-out;
+      -o-transition: all $default-transition-duration ease-in-out;
+      -ms-transition: all $default-transition-duration ease-in-out;
+      transition: all $default-transition-duration ease-in-out;
+
+      .button-text {
+        color: $white;
+      }
+    }
+
+    input {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
+
+    .button-text {
+      color: $default-secondary-color;
+    }
+  }
+}

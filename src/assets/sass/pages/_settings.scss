@@ -1,0 +1,45 @@
+.appInfo {
+  label {
+    color: $default-secondary-color !important;
+    cursor: pointer;
+  }
+}
+
+.settings-datatable {
+  .card {
+    &.card-with-shadow {
+      box-shadow: none !important;
+    }
+  }
+}
+
+// Partner settings
+.common_settings {
+  .label {
+    color: $muted-color;
+  }
+
+  .block-heading {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $default-secondary-color;
+  }
+}
+
+// app settings
+.external-links {
+  a:hover {
+    color: var(--default-font-color);
+  }
+}
+
+// addons
+.addons {
+  &__add-addons {
+    .modal-body {
+      max-height: 470px;
+      overflow-y: auto;
+    }
+  }
+}

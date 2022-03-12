@@ -1,0 +1,162 @@
+// Normal Colors
+$blue: #4466f2;
+$facebook-blue: #3b5998;
+$dark-blue: #2850f0;
+$red: #fc2c10;
+$orange: #fc6510;
+$yellow: #ff9417;
+$green: #27ae60;
+$black: #000000;
+$white: #ffffff;
+$cyan: #3fb9b8;
+$skyblue: #56ccf2;
+$purple: #bb6bd9;
+$chineseBlue: #3b5998;
+$sea-green: #2b8768;
+$yankees-blue: #1c2e45;
+$dark-charcoal: #333333;
+$cultured: #f7f5f2;
+$dark-grey: #575757;
+$gray: #74777b;
+
+// Functional color variables
+$functional0: #ffffff;
+$functional1: #575757;
+$functional2: #8f8f94;
+$functional3: #b7b8bc;
+$functional4: #fbfbfb;
+$functional5: #f7f5f2;
+$functional6: #1c2e45;
+$functional7: #333333;
+$functional8: #2b8768;
+
+// Color Variables
+$brand-color: #3fb9b8;
+$brand-color2: #2b8768;
+$brand-color-dark: #3ba7a6;
+$base-color: #f4f8f9;
+$default-primary-color: $functional1;
+$default-secondary-color: $functional2;
+$default-light-color: $functional4;
+$muted-color: $functional3;
+$gray-1: #8a8a8a;
+$info-color: $skyblue;
+$warning-color: $yellow;
+$error-color: $red;
+$danger-color: $red;
+$success-color: $green;
+$default-font-color: var(--default-font-color);
+
+// default padding margin variable
+
+$default-padding-margin-30: 2.005rem;
+$default-padding-margin-40: 3.005rem;
+$default-padding-margin-90: 8.005rem;
+$default-padding-margin-20: 1.337rem;
+$default-padding-margin-10: 0.668rem;
+$default-padding-margin-5: 0.334rem;
+
+// Border Variables
+$default-radius: 0.267rem;
+
+// Fonts
+$light-layout-secondary-font-color: #8a8a8a;
+$default-font-size: 0.935rem;
+$type-1: 'Poppins', sans-serif;
+
+// Buttons
+
+$btn-link-color: $default-secondary-color;
+$btn-link-hover-color: $brand-color;
+$action-button-padding: 0.4rem 0.5rem;
+$default-button-padding: 0.45rem 1.2rem;
+
+// Cards
+$default-card-padding: 2rem;
+
+// Dropdown
+$dropdown-arrow-font-size: 0.55rem;
+
+// Measurement & Property Variables
+$default-padding-margin: 2rem;
+$bootstrap-column-padding: 1rem;
+$main-content-wrapper-padding: 2rem;
+
+// filter buttons
+$filter-button-padding: 0.6rem 1.3rem;
+$filter-button-rounded-padding: 0.6rem 1.8rem;
+$filter-button-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+$filter-button-hover-shadow: 3px 4px 8px rgba(0, 0, 0, 0.08);
+
+// Transition Variables
+$default-transition-duration: 0.25s;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease-in-out;
+
+// Form Variables
+$wizard-step-btn-default-color: $default-secondary-color;
+$forms-input-text-color: #898989;
+$filter-btn-text-color: $light-layout-secondary-font-color;
+$inputs-focus-color: $cyan;
+$default-input-box-padding: 10px 14px;
+
+//Variables
+$default-scrollbar-width: 6px;
+$light-layout-card-bg: $white;
+$default-modal-padding: 1.688rem;
+$default-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+$default-card-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+$default-light-btn-hover-bg: rgba(245, 248, 255, 0.95);
+$default-dark-btn-hover-bg: rgba(68, 102, 242, 0.95);
+
+// Navbar
+$navbar-height: 80px;
+$navbar-menu-color: #9c9fa6;
+$navbar-menu-active-color: #cdced2;
+$navbar-font-size: 0.875rem;
+$light-navbar-link-color: $brand-color;
+
+// Sidebar
+$sidebar-width-lg: 250px;
+$sidebar-width-icon: 80px;
+$sidebar-scrollbar-width: 6px;
+$sidebar-scrollbar-thumb-color: #566076;
+$sidebar-menu-padding-y: 0.5rem;
+$sidebar-menu-padding-x: 1.25rem;
+$sidebar-menu-font-size: 1.0696rem;
+$sidebar-submenu-font-size: 0.9rem;
+$sidebar-submenu-item-padding: 0.75rem 1.35rem 0.75rem 1.35rem;
+$sidebar-icon-font-size: 1.125rem;
+$sidebar-arrow-font-size: 0.75rem;
+$icon-only-collapse-width: 190px;
+
+$sidebar-light-submenu-color: #888;
+$sidebar-light-menu-arrow-color: #9e9da0;
+
+$sidebar-dark-bg: #272b35;
+$sidebar-dark-menu-color: #797d8d;
+$sidebar-submenu-bg-color: darken($sidebar-dark-bg, 6%);
+$navbar-brand-bg: darken($sidebar-dark-bg, 6%);
+
+// Variables for dark layout
+$dark-layout-base-color: darken($sidebar-dark-bg, 6%);
+$dark-layout-default-border-color: lighten($sidebar-dark-bg, 8%);
+$dark-layout-box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.5);
+
+// Variables for mobile view
+$default-font-size-for-mobile: 0.9rem;
+$main-content-wrapper-mobile-padding: 20px;
+$default-padding-margin-for-mobile: 20px;
+
+//Variables for font size
+$default-tab-font-size: 1.6rem;
+//$default-card-font-size: 1.6rem;
+
+// Invoice Summery Page
+$progress-bar-card-padding: 15px 40px;
+
+// offcanvas
+$offcanvas-bg-color: var(--app-background-color);
+$offcanvas-border-color: var(--app-background-color);
+$offcanvas-horizontal-width: 500px;
+$offcanvas-padding-x: 0;

@@ -1,0 +1,30 @@
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+   font-weight: 600;
+ }
+.toast{
+  font-size: 1.6rem;
+}
+
+// Slider
+.bubble {
+  background: blue;
+  color: #fff;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  top: 100%;
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid blue;
+  top: -6px;
+  left: 43%;
+}
+
